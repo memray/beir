@@ -21,15 +21,13 @@ import tqdm
 import re
 
 #### Twitter Account Details
-consumer_key = 'is0DfZhwrvQIGXo5a1gD0vYbH' # Your twitter consumer key
-consumer_secret = '71IbFRWCv2zHWyFlNRpHimVnkOGoThYGLakHIOemA7KplJvDB4' # Your twitter consumer secret
-access_token = '1381690552584900611-Rt061WvZnTgpf54BP020dqtks1nKES'
-access_token_secret = 'BGYJMeOmSdZaWmZmISngcdFIFrzTdrrwtpGrt48lu9Mp9'
-callback_url = '127.0.0.1:9999' # callback url
+consumer_key = 'XXXXXXXX' # Your twitter consumer key
+consumer_secret = 'XXXXXXXX' # Your twitter consumer secret
+callback_url = 'XXXXXXXX' # callback url
 
 #### Input/Output Details
-input_file = "/export/home/data/beir/signal-1m/201509-tweet-ids.txt" # Tab seperated file containing twitter tweet-id in each line
-output_file = "/export/home/data/beir/signal-1m/201509-tweet-scraped-text.txt" # output file which you wish to save
+input_file = "input-tweets.tsv" # Tab seperated file containing twitter tweet-id in each line 
+output_file = "201509-tweet-scraped-ids-test.txt" # output file which you wish to save
 
 def chunks(lst, n):
     """Yield successive n-sized chunks from lst."""

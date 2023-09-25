@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73c84f88-30fe-4ece-b194-9f67dc2d015f" name="Changes" comment="Merge branch 'main' of github.com:UKPLab/beir" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="272b616fpHu3nhtnXxiNX00TJr0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.test_bm25">
+    <configuration name="evaluate_ance" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
+      <module name="beir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="LD_LIBRARY_PATH" value="/usr/lib64;/usr/local/nvidia/lib:/usr/local/nvidia/lib64;/usr/local/nvidia/lib64/stubs" />
+        <env name="CUDA_VISIBLE_DEVICES" value="1" />
+        <env name="RANK" value="0" />
+        <env name="WORLD_SIZE" value="1" />
+        <env name="CUDA_LAUNCH_BLOCKING" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@127.0.0.1:2222/export/share/ruimeng/env/anaconda/envs/ir-cuda114/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/retrieval/evaluation/dense" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/retrieval/evaluation/dense/evaluate_ance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="evaluate_bm25" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="beir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@127.0.0.1:2222/export/share/ruimeng/env/anaconda/envs/ir-cuda114/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/retrieval/evaluation/lexical" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/retrieval/evaluation/lexical/evaluate_bm25.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scrape_tweets" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="beir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@127.0.0.1:2222/export/share/ruimeng/env/anaconda/envs/ir/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/dataset" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/dataset/scrape_tweets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_bm25" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="beir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/retrieval/evaluation/lexical" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/retrieval/evaluation/lexical/test_bm25.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_msmarco_v2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="beir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="12" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/retrieval/training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/retrieval/training/train_msmarco_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.scrape_tweets" />
+      <item itemvalue="Python.evaluate_ance" />
+      <item itemvalue="Python.evaluate_bm25" />
+      <item itemvalue="Python.train_msmarco_v2" />
+      <item itemvalue="Python.test_bm25" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73c84f88-30fe-4ece-b194-9f67dc2d015f" name="Changes" comment="" />
+      <created>1648520950137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648520950137</updated>
+      <workItem from="1648520954915" duration="2734000" />
+      <workItem from="1648580595709" duration="48945000" />
+      <workItem from="1653279313368" duration="11000" />
+      <workItem from="1657090570228" duration="1536000" />
+      <workItem from="1657360611288" duration="79000" />
+      <workItem from="1659138511159" duration="1248000" />
+      <workItem from="1659997800397" duration="244000" />
+      <workItem from="1661920886024" duration="4327000" />
+      <workItem from="1661961442672" duration="1302000" />
+      <workItem from="1663267926541" duration="17978000" />
+      <workItem from="1665003639980" duration="924000" />
+      <workItem from="1665783436850" duration="1084000" />
+      <workItem from="1667451372967" duration="556000" />
+      <workItem from="1695654881970" duration="2077000" />
+    </task>
+    <task id="LOCAL-00001" summary="local changes for BM25">
+      <created>1695654945186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695654945186</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'main' of github.com:UKPLab/beir">
+      <created>1695656861411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695656861411</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Revert &quot;local changes for BM25&quot;&#10;&#10;This reverts commit f742114b">
+      <created>1695657156644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695657156644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="local changes for BM25" />
+    <MESSAGE value="Merge branch 'main' of github.com:UKPLab/beir" />
+    <MESSAGE value="Revert &quot;local changes for BM25&quot;&#10;&#10;This reverts commit f742114b" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;local changes for BM25&quot;&#10;&#10;This reverts commit f742114b" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/benchmarking/benchmark_bm25.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2021.2/remote_sources/471602934/-1221359512/elastic_transport/_transport.py</url>
+          <line>335</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/beir/retrieval/search/lexical/elastic_search.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2021.2/remote_sources/471602934/-1221359512/elasticsearch/_sync/client/utils.py</url>
+          <line>403</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2021.2/remote_sources/471602934/-1221359512/elasticsearch/_sync/client/indices.py</url>
+          <line>508</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2021.2/remote_sources/471602934/-1221359512/elastic_transport/_models.py</url>
+          <line>323</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="es_credentials" language="Python" />
+        <watch expression="self.config" language="Python" />
+        <watch expression="e" language="Python" />
+        <watch expression="es_credentials[&quot;hostname&quot;]" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/beir$evaluate_bm25.coverage" NAME="evaluate_bm25 Coverage Results" MODIFIED="1663365133394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/retrieval/evaluation/lexical" />
+    <SUITE FILE_PATH="coverage/beir$test_bm25.coverage" NAME="test_bm25 Coverage Results" MODIFIED="1667451402462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/retrieval/evaluation/lexical" />
+    <SUITE FILE_PATH="coverage/beir$evaluate_ance.coverage" NAME="evaluate_ance Coverage Results" MODIFIED="1650002139218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/retrieval/evaluation/dense" />
+    <SUITE FILE_PATH="coverage/beir$scrape_tweets.coverage" NAME="scrape_tweets Coverage Results" MODIFIED="1648694754402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/dataset" />
+    <SUITE FILE_PATH="coverage/beir$train_msmarco_v2.coverage" NAME="train_msmarco_v2 Coverage Results" MODIFIED="1648613890206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/retrieval/training" />
+  </component>
+</project>
