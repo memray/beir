@@ -1,4 +1,5 @@
 from elasticsearch import Elasticsearch
+from elastic_transport import RequestsHttpNode
 from elasticsearch.helpers import streaming_bulk
 from typing import Dict, List, Tuple
 import logging
@@ -30,11 +31,11 @@ class ElasticSearch(object):
         self.text_key = es_credentials["keys"]["body"]
         self.title_key = es_credentials["keys"]["title"]
         self.number_of_shards = es_credentials["number_of_shards"]
-        
+
         self.es = Elasticsearch(
-            [es_credentials["hostname"]], 
-            timeout=es_credentials["timeout"], 
-            retry_on_timeout=es_credentials["retry_on_timeout"], 
+            [es_credentials["hostname"]],
+            timeout=es_credentials["timeout"],
+            retry_on_timeout=es_credentials["retry_on_timeout"],
             maxsize=es_credentials["maxsize"])
 
     def check_language_supported(self):

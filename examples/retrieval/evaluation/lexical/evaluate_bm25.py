@@ -30,7 +30,8 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 #### /print debug information to stdout
 
 #### Download scifact.zip dataset and unzip the dataset
-dataset = "scifact"
+# dataset = "scifact"
+dataset = 'trec-covid'
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
 out_dir = os.path.join(pathlib.Path(__file__).parent.absolute(), "datasets")
 data_path = util.download_and_unzip(url, out_dir)
@@ -49,8 +50,8 @@ corpus, queries, qrels = GenericDataLoader(data_path).load(split="test")
 #### We use default ES settings for retrieval
 #### https://www.elastic.co/
 
-hostname = "your-hostname" #localhost
-index_name = "your-index-name" # scifact
+hostname = "http://localhost:9200" #localhost
+index_name = f"bm25-{dataset}"
 
 #### Intialize #### 
 # (1) True - Delete existing index and re-index all documents from scratch 
@@ -73,12 +74,15 @@ results = retriever.retrieve(corpus, queries)
 #### Evaluate your retrieval using NDCG@k, MAP@K ...
 logging.info("Retriever evaluation for k in: {}".format(retriever.k_values))
 ndcg, _map, recall, precision = retriever.evaluate(qrels, results, retriever.k_values)
+mrr = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="mrr")
+recall_cap = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="recall_cap")
+hole = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="hole")
 
 #### Retrieval Example ####
 query_id, scores_dict = random.choice(list(results.items()))
-logging.info("Query : %s\n" % queries[query_id])
+logging.info("Query : %s" % queries[query_id])
 
 scores = sorted(scores_dict.items(), key=lambda item: item[1], reverse=True)
 for rank in range(10):
     doc_id = scores[rank][0]
-    logging.info("Doc %d: %s [%s] - %s\n" % (rank+1, doc_id, corpus[doc_id].get("title"), corpus[doc_id].get("text")))
+    logging.info("Doc %d: %s [%s] - %s" % (rank+1, doc_id, corpus[doc_id].get("title"), corpus[doc_id].get("text")))
